@@ -1,5 +1,6 @@
 import '../styles/Welcome.css';
 import React from 'react';
+import Search from './Search';
 import PropTypes from 'prop-types';
 
 function Welcome (props) {
