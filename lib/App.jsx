@@ -6,8 +6,8 @@ import CurrentWeather from './CurrentWeather';
 // import { data } from './fakeData';
 import Search from './Search';
 import Welcome from './Welcome';
-import ApiFilter from './ApiFilter';
-import { key } from './api.js';
+import apiFilter from './ApiFilter';
+import key from './api.js';
 
 export default class App extends React.Component {
   constructor() {
@@ -34,19 +34,18 @@ export default class App extends React.Component {
   }
 
   setWeatherLoc() {
-    const url = `http://api.wunderground.com/api/${key}/conditions/forecast10day/hourly/q/CO/Denver.json`;
-      
+    const url = `https://api.wunderground.com/api/${key}/conditions/forecast10day/hourly/q/CO/Denver.json`;
+
     fetch(url)
       .then(data => data.json())
-
       .then(data => {
-        let forecast = apiFilter(data);
+        let weather = apiFilter(data);
 
         this.setState({
-          CurrentWeatherObject: forecast.currentWeatherObject,
-          SevenHourArray: forecast.sevenHourArray,
-          TenDayArray: forecast.tenDayArray
-        });   
+          CurrentWeather: weather.currentWeatherObject,
+          SevenHour: weather.sevenHourArray,
+          TenDay: weather.tenDayArray
+        });
       });
   }
 

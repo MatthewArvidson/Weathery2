@@ -1,0 +1,8 @@
+body {
+  background-image: '../assets/background-image.jpg';
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}

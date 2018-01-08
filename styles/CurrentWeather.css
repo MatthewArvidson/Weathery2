@@ -1,0 +1,9 @@
+.CurrentWeather {
+  display: flex;
+  justify-content: space-between;
+}
+
+.currentWeatherTitle {
+  font-family: "Open Sans";
+  text-align: left;
+}
