@@ -40,6 +40,7 @@ class App extends Component {
           tenDayArray
         });   
       });
+      console.log(data.location);
   }
 
   componentDidMount() {
@@ -50,9 +51,9 @@ class App extends Component {
     return (
       <div className="App">
         <Search />
-        <CurrentWeather data={this.state.currentWeatherObject} />
-        <SevenHour data={this.state.sevenHourArray} />
-        <TenDay data={this.state.tenDayArray} />
+        <CurrentWeather currentWeather={this.state.currentWeatherObject} />
+        <SevenHour sevenHour={this.state.sevenHourArray} />
+        <TenDay tenDay={this.state.tenDayArray} />
       </div>
     )
   }

@@ -3,11 +3,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function CurrentWeather (props) {
-  /* let { observationTime, location, tempNum, high, low, sentence, icon } = props.currentWeatherObject; */
+  let { location, observationTime, tempNum, high, low, sentence, icon } = props.currentWeatherObject;
 
   return (
     <div className="CurrentWeather">
       <h1>Current Weather</h1>
+      
     </div>
   );
 }
