@@ -3,16 +3,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Card (props) {
-  
+  let { day, icon, condition, high, low, maxHumid, minHumid, maxWind, windDirection, hour, temp, windSpeed, humidity } = props.weather;
+
   return (
     <div className="Card">
-      <h1>Card</h1>
+      {}
     </div>
   );
 }
 
 Card.propTypes = {
-  updateFunction: PropTypes.func
+  weather: PropTypes.object.isRequired
 };
 
 export default Card;
