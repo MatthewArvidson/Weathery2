@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Card (props) {
-  let { day, icon, condition, high, low, maxHumid, minHumid, maxWind, windDirection, hour, temp, windSpeed, humidity } = props.weather;
+  let { day, icon, condition, high, low, hour, temp } = props.weather;
 
   return (
     <div className="Card">
