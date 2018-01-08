@@ -1,18 +1,12 @@
 import '../styles/7Hour.css';
 import React from 'react';
 import Card from './Card';
-import PropTypes from 'prop-types';
 
-function SevenHour (props) {
+export default function SevenHour (props) {
   return (
-    <div className="SevenHourForecast">
+    <div className="sevenHourCards">
       <h1>SevenHour</h1>
+      <h2>{props.forecast.temp}</h2>
     </div>
   );
 }
-
-SevenHour.propTypes = {
-  updateFunction: PropTypes.func
-};
-
-export default SevenHour;

@@ -2,7 +2,7 @@ import '../styles/Card.css';
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Card (props) {
+export default function Card (props) {
   let { day, icon, condition, high, low, hour, temp } = props.weather;
 
   return (
@@ -15,5 +15,3 @@ function Card (props) {
 Card.propTypes = {
   weather: PropTypes.object.isRequired
 };
-
-export default Card;
