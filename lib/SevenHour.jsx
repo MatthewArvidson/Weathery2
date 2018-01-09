@@ -7,8 +7,8 @@ export default function SevenHour (props) {
   return (
     <div className="sevenHourForecast">
       {
-        props.data &&
-        props.data.map((hour, index) => {
+        props.forecast &&
+        props.forecast.map((hour, index) => {
           return (
             <Card 
               hour={hour}
