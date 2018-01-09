@@ -1,0 +1,13 @@
+.search {
+  display: inline-block;
+}
+
+input {
+  height: 30px;
+  width: 300px;
+}
+
+button {
+  height: 38px;
+  width: 80px;
+}

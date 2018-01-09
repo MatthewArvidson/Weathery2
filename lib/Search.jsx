@@ -1,3 +1,5 @@
+import '../styles/Search.css';
+import '../styles/normalize.css';
 import React from 'react';
 
 export default class Search extends React.Component {
@@ -12,10 +14,8 @@ export default class Search extends React.Component {
 
   render() {
     return (
-      <div className="Search">
-        <input
-          placeholder="city, state"
-        />
+      <div className="search">
+        <input placeholder="city, state, or zip code"/>
         <button>SEARCH</button>
       </div>
     )

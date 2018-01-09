@@ -1,4 +1,5 @@
 import '../styles/Welcome.css';
+import '../styles/normalize.css';
 import React from 'react';
 import Search from './Search';
 import PropTypes from 'prop-types';

@@ -1,4 +1,5 @@
 import '../styles/10Day.css';
+import '../styles/normalize.css';
 import React from 'react';
 import Card from './Card';
 import PropTypes from 'prop-types';
