@@ -5,9 +5,18 @@ import Card from './Card';
 
 export default function SevenHour (props) {
   return (
-    <div className="sevenHourCards">
-      <h1>SevenHour</h1>
-      <h2>{props.forecast.temp}</h2>
+    <div className="sevenHourForecast">
+      {
+        props.data &&
+        props.data.map((hour, index) => {
+          return (
+            <Card 
+              hour={hour}
+              key={index}
+            />
+          )
+        })
+      } 
     </div>
   );
 }
