@@ -1,4 +1,5 @@
 import '../styles/App.css';
+import '../styles/normalize.css';
 import React, { Component } from 'react';
 import SevenHour from './SevenHour';
 import TenDay from './TenDay';

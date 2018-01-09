@@ -1,4 +1,5 @@
 import '../styles/Card.css';
+import '../styles/normalize.css';
 import React from 'react';
 import PropTypes from 'prop-types';
 

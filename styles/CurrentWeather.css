@@ -1,9 +1,27 @@
-.CurrentWeather {
+.currentWeather {
   display: flex;
   justify-content: space-between;
+  color: white;
+  width: 100%;
 }
 
 .currentWeatherTitle {
   font-family: "Open Sans";
-  text-align: left;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.currentWeatherIcon {
+  height: 200px;
+  margin-right: 70px;
+}
+
+.currentWeatherLeftSide  {
+  list-style-type: none;
+  font-size: 40px;
+}
+
+.currentWeatherIconContainer {
+  display: inline-block;
+  position: relative;
 }
