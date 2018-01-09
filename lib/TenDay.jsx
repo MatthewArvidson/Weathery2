@@ -7,8 +7,8 @@ export default function TenDay (props) {
   return (
     <div className="tenDayForecast">
       {
-        props.data &&
-        props.data.map((day, index) => {
+        props.forecast &&
+        props.forecast.map((day, index) => {
           return (
             <Card
             day={day}

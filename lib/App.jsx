@@ -7,6 +7,7 @@ import CurrentWeather from './CurrentWeather';
 // import { data } from './fakeData';
 import Search from './Search';
 import Welcome from './Welcome';
+import Card from './Card';
 import apiFilter from './ApiFilter';
 import key from './api.js';
 
@@ -15,6 +16,7 @@ export default class App extends React.Component {
     super();
 
     this.state = {
+      location: '',
       CurrentWeather: {},
       SevenHour: [],
       TenDay: []
@@ -51,6 +53,11 @@ export default class App extends React.Component {
   }
 
   componentDidMount() {
-    this.setWeatherLoc();
+    this.setWeatherLoc(location);
+    /*let location = localStorage.getItem('location');
+
+    if (location !== null) {
+    this.setWeatherLoc(location);
+    } */
   }
 }
