@@ -12,7 +12,6 @@ export default function Card (props) {
           <img src={props.hour.icon} alt="icon representing current conditions" />
           <h4>Condition: {props.hour.condition}</h4>
           <h4>Temp: {props.hour.temp}°F</h4>
-          <h4>Chance of Rain: {props.hour.precip}% </h4>
         </div>
       }
 
@@ -23,7 +22,6 @@ export default function Card (props) {
           <img src={props.day.icon} alt="icon representing current conditions" />
           <h4>Condition: {props.day.condition}</h4>
           <h4>High: {props.day.high}°F   |   Low: {props.day.low}°F</h4>
-          <h4>Chance of Rain: {props.day.precip}% </h4>
         </div>
       }
     </div>
